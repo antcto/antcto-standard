@@ -1,0 +1,9 @@
+admin_controllers:
+    resource: ../../core/AdminController/
+    prefix: /admin
+    type: annotation
+
+theme_controllers:
+    resource: ../../theme/Controller
+    prefix: /
+    type: annotation

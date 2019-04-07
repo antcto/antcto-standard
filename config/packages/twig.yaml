@@ -1,0 +1,6 @@
+twig:
+    default_path: '%kernel.project_dir%/theme/Template/%theme_name%'
+    paths:
+        '%kernel.project_dir%/core/AdminTemplate': 'admin_theme'
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
