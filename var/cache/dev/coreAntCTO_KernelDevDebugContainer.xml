@@ -223,18 +223,11 @@
   </parameters>
   <services>
     <service id="service_container" class="Symfony\Component\DependencyInjection\ContainerInterface" public="true" synthetic="true"/>
-    <service id="AntCTO\AdminController\DemoController" class="AntCTO\AdminController\DemoController" public="true" autowire="true" autoconfigure="true">
+    <service id="AntCTO\AdminController\SecurityController" class="AntCTO\AdminController\SecurityController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
-        <argument type="service" id=".service_locator.KTVqfp6.AntCTO\AdminController\DemoController"/>
-      </call>
-    </service>
-    <service id="AntCTO\AdminController\TestController" class="AntCTO\AdminController\TestController" public="true" autowire="true" autoconfigure="true">
-      <tag name="controller.service_arguments"/>
-      <tag name="container.service_subscriber"/>
-      <call method="setContainer">
-        <argument type="service" id=".service_locator.KTVqfp6.AntCTO\AdminController\TestController"/>
+        <argument type="service" id=".service_locator.KTVqfp6.AntCTO\AdminController\SecurityController"/>
       </call>
     </service>
     <service id="AntCTO\Repository\DemoRepository" class="AntCTO\Repository\DemoRepository" autowire="true" autoconfigure="true">
@@ -1918,12 +1911,9 @@
     <service id="doctrine_migrations.version_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsVersionDoctrineCommand">
       <tag name="console.command"/>
     </service>
-    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.AntCTO\AdminController\DemoController" class="AntCTO\AdminController\DemoController" autowire="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.AntCTO\AdminController\DemoController" class="AntCTO\AdminController\DemoController" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.AntCTO\AdminController\DemoController" class="AntCTO\AdminController\DemoController" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.AntCTO\AdminController\TestController" class="AntCTO\AdminController\TestController" autowire="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.AntCTO\AdminController\TestController" class="AntCTO\AdminController\TestController" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.AntCTO\AdminController\TestController" class="AntCTO\AdminController\TestController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.AntCTO\AdminController\SecurityController" class="AntCTO\AdminController\SecurityController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.AntCTO\AdminController\SecurityController" class="AntCTO\AdminController\SecurityController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.AntCTO\AdminController\SecurityController" class="AntCTO\AdminController\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.AntCTO\Repository\DemoRepository" class="AntCTO\Repository\DemoRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.AntCTO\Repository\DemoRepository" class="AntCTO\Repository\DemoRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.AntCTO\Theme\Controller\DemoController" class="AntCTO\Theme\Controller\DemoController" autowire="true" abstract="true"/>
@@ -2174,15 +2164,9 @@
         <argument key="twig" type="service" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
-    <service id=".service_locator.KTVqfp6.AntCTO\AdminController\DemoController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
-      <tag name="container.service_locator_context" id="AntCTO\AdminController\DemoController"/>
-      <argument>AntCTO\AdminController\DemoController</argument>
-      <argument type="service" id="service_container"/>
-      <factory service=".service_locator.KTVqfp6" method="withContext"/>
-    </service>
-    <service id=".service_locator.KTVqfp6.AntCTO\AdminController\TestController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
-      <tag name="container.service_locator_context" id="AntCTO\AdminController\TestController"/>
-      <argument>AntCTO\AdminController\TestController</argument>
+    <service id=".service_locator.KTVqfp6.AntCTO\AdminController\SecurityController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="AntCTO\AdminController\SecurityController"/>
+      <argument>AntCTO\AdminController\SecurityController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.KTVqfp6" method="withContext"/>
     </service>
