@@ -21,8 +21,10 @@ class coreAntCTO_KernelDevDebugContainerUrlGenerator extends Symfony\Component\R
         if (null === self::$declaredRoutes) {
             self::$declaredRoutes = [
         '_twig_error_test' => [['code', '_format'], ['_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
-        'demo_admin' => [[], ['_controller' => 'AntCTO\\AdminController\\DemoController::index'], [], [['text', '/admin/demo.html']], [], []],
-        'test' => [[], ['_controller' => 'AntCTO\\AdminController\\TestController::index'], [], [['text', '/admin/test']], [], []],
+        '_register' => [[], ['_controller' => 'AntCTO\\AdminController\\RegistrationController::index'], [], [['text', '/admin/register.html']], [], []],
+        '_login' => [[], ['_controller' => 'AntCTO\\AdminController\\SecurityController::login'], [], [['text', '/admin/']], [], []],
+        '_login_check' => [[], ['_controller' => 'AntCTO\\AdminController\\SecurityController::checkAction'], [], [['text', '/admin/check.html']], [], []],
+        '_logout' => [[], ['_controller' => 'AntCTO\\AdminController\\SecurityController::logoutAction'], [], [['text', '/admin/logout.html']], [], []],
         'demo' => [[], ['_controller' => 'AntCTO\\Theme\\Controller\\DemoController::index'], [], [['text', '/demo']], [], []],
     ];
         }
