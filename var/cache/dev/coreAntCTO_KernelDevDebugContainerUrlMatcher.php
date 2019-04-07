@@ -16,7 +16,7 @@ class coreAntCTO_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\Framew
         $this->context = $context;
         $this->staticRoutes = [
             '/admin/register.html' => [[['_route' => '_register', '_controller' => 'AntCTO\\AdminController\\RegistrationController::index'], null, null, null, false, false, null]],
-            '/admin' => [[['_route' => '_login', '_controller' => 'AntCTO\\AdminController\\SecurityController::login'], null, null, null, true, false, null]],
+            '/admin/login.html' => [[['_route' => '_login', '_controller' => 'AntCTO\\AdminController\\SecurityController::login'], null, null, null, false, false, null]],
             '/admin/check.html' => [[['_route' => '_login_check', '_controller' => 'AntCTO\\AdminController\\SecurityController::checkAction'], null, null, null, false, false, null]],
             '/admin/logout.html' => [[['_route' => '_logout', '_controller' => 'AntCTO\\AdminController\\SecurityController::logoutAction'], null, null, null, false, false, null]],
             '/demo' => [[['_route' => 'demo', '_controller' => 'AntCTO\\Theme\\Controller\\DemoController::index'], null, null, null, false, false, null]],

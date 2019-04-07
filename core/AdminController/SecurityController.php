@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/", name="_login")
+     * @Route("/login.html", name="_login")
      */
     public function login(Request $request)
     {
@@ -68,7 +68,7 @@ class SecurityController extends AbstractController
      */
     protected function renderLogin(array $data)
     {
-        return $this->render('security/index.html.twig', $data);
+        return $this->render('@admin_theme/security/index.html.twig', $data);
     }
 
     /**

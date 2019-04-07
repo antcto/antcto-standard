@@ -22,7 +22,7 @@ class coreAntCTO_KernelDevDebugContainerUrlGenerator extends Symfony\Component\R
             self::$declaredRoutes = [
         '_twig_error_test' => [['code', '_format'], ['_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
         '_register' => [[], ['_controller' => 'AntCTO\\AdminController\\RegistrationController::index'], [], [['text', '/admin/register.html']], [], []],
-        '_login' => [[], ['_controller' => 'AntCTO\\AdminController\\SecurityController::login'], [], [['text', '/admin/']], [], []],
+        '_login' => [[], ['_controller' => 'AntCTO\\AdminController\\SecurityController::login'], [], [['text', '/admin/login.html']], [], []],
         '_login_check' => [[], ['_controller' => 'AntCTO\\AdminController\\SecurityController::checkAction'], [], [['text', '/admin/check.html']], [], []],
         '_logout' => [[], ['_controller' => 'AntCTO\\AdminController\\SecurityController::logoutAction'], [], [['text', '/admin/logout.html']], [], []],
         'demo' => [[], ['_controller' => 'AntCTO\\Theme\\Controller\\DemoController::index'], [], [['text', '/demo']], [], []],
