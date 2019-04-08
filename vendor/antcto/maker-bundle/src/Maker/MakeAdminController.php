@@ -11,6 +11,7 @@
 
 namespace AntCTO\Bundle\MakerBundle\Maker;
 
+use AntCTO\Bundle\MakerBundle\FileManager;
 use Doctrine\Common\Annotations\Annotation;
 use AntCTO\Bundle\MakerBundle\ConsoleStyle;
 use AntCTO\Bundle\MakerBundle\DependencyBuilder;
@@ -29,6 +30,17 @@ use Symfony\Component\Console\Input\InputOption;
  */
 class MakeAdminController extends AbstractMaker
 {
+    private $fileManager;
+    private $themeName;
+    private $routeSuffix;
+
+    public function __construct(FileManager $fileManager, $routeSuffix)
+    {
+        $this->fileManager = $fileManager;
+        $this->routeSuffix = $routeSuffix;
+
+    }
+
     public static function getCommandName(): string
     {
         return 'make:admin:controller';
@@ -54,11 +66,19 @@ class MakeAdminController extends AbstractMaker
 
         $noTemplate = $input->getOption('no-template');
         $templateName = Str::asFilePath($controllerClassNameDetails->getRelativeNameWithoutSuffix()).'/index.html.twig';
+        $routePath = Str::asRoutePath($controllerClassNameDetails->getRelativeNameWithoutSuffix());
+        if ($this->routeSuffix)
+        {
+            $this->routeSuffix = trim($this->routeSuffix);
+            $this->routeSuffix = trim($this->routeSuffix, '.');
+            $routePath .= '.' . $this->routeSuffix;
+        }
+
         $controllerPath = $generator->generateController(
             $controllerClassNameDetails->getFullName(),
             'controller/Controller.tpl.php',
             [
-                'route_path' => Str::asRoutePath($controllerClassNameDetails->getRelativeNameWithoutSuffix()),
+                'route_path' => $routePath,
                 'route_name' => Str::asRouteName($controllerClassNameDetails->getRelativeNameWithoutSuffix()),
                 'with_template' => $this->isTwigInstalled() && !$noTemplate,
                 'template_name' => $templateName,

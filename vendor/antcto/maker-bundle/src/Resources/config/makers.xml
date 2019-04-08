@@ -21,6 +21,7 @@
 
             <service id="maker.maker.make_admin_controller" class="AntCTO\Bundle\MakerBundle\Maker\MakeAdminController">
                 <argument type="service" id="maker.file_manager" />
+                <argument>%route_suffix%</argument>
                 <tag name="maker.command" />
             </service>
 
