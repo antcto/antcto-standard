@@ -33,11 +33,13 @@ class MakeThemeController extends AbstractMaker
 {
     private $fileManager;
     private $themeName;
+    private $routeSuffix;
 
-    public function __construct(FileManager $fileManager, string $themeName)
+    public function __construct(FileManager $fileManager, string $themeName, $routeSuffix)
     {
         $this->fileManager = $fileManager;
         $this->themeName = $themeName;
+        $this->routeSuffix = $routeSuffix;
 
     }
 
@@ -67,11 +69,18 @@ class MakeThemeController extends AbstractMaker
 
         $noTemplate = $input->getOption('no-template');
         $templateName = Str::asFilePath($controllerClassNameDetails->getRelativeNameWithoutSuffix()).'/index.html.twig';
+        $routePath = Str::asRoutePath($controllerClassNameDetails->getRelativeNameWithoutSuffix());
+        if ($this->routeSuffix)
+        {
+            $this->routeSuffix = trim($this->routeSuffix);
+            $this->routeSuffix = trim($this->routeSuffix, '.');
+            $routePath .= '.' . $this->routeSuffix;
+        }
         $controllerPath = $generator->generateController(
             $controllerClassNameDetails->getFullName(),
             'controller/Controller.tpl.php',
             [
-                'route_path' => Str::asRoutePath($controllerClassNameDetails->getRelativeNameWithoutSuffix()),
+                'route_path' => $routePath,
                 'route_name' => Str::asRouteName($controllerClassNameDetails->getRelativeNameWithoutSuffix()),
                 'with_template' => $this->isTwigInstalled() && !$noTemplate,
                 'template_name' => $templateName,

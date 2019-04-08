@@ -27,6 +27,7 @@
             <service id="maker.maker.make_theme_controller" class="AntCTO\Bundle\MakerBundle\Maker\MakeThemeController">
                 <argument type="service" id="maker.file_manager" />
                 <argument>%theme_name%</argument>
+                <argument>%route_suffix%</argument>
                 <tag name="maker.command" />
             </service>
 

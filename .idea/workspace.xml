@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bb5deb-f4a2-4e25-958a-ca54b762ec1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/AdminController/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/AdminController/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/AdminTemplate/security/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/core/AdminTemplate/security/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Entity/Demo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Repository/DemoRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/Controller/DemoController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/Template/antcto/demo/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/Template/default/TemplateFunction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/Template/default/demo/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/flex/src/Command/DumpEnvCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/flex/src/Command/DumpEnvCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/flex/src/Configurator/BundlesConfigurator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/flex/src/Configurator/BundlesConfigurator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/flex/src/Lock.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/flex/src/Lock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/flex/src/Options.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/flex/src/Options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/flex/tests/Configurator/BundlesConfiguratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/flex/tests/Configurator/BundlesConfiguratorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeThemeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeThemeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Resources/config/makers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Resources/config/makers.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,10 +21,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/services.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -74,30 +56,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/theme/Controller/DashboardController.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Resources/config/makers.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="318">
+              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeThemeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-654" />
+            <state relative-caret-position="402">
+              <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+            </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/AdminTemplate/dashboard/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -178,7 +152,6 @@
         <option value="$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/ControllerTrait.php" />
         <option value="$PROJECT_DIR$/theme/default/Controller/DemoController.php" />
         <option value="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeTheme.php" />
-        <option value="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeThemeController.php" />
         <option value="$PROJECT_DIR$/core/Template/demo/index.html.twig" />
         <option value="$PROJECT_DIR$/theme/Controller/DemoController.php" />
         <option value="$PROJECT_DIR$/core/Controller/DemoController.php" />
@@ -203,10 +176,11 @@
         <option value="$PROJECT_DIR$/core/AdminController/SecurityController.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/core/Entity/User.php" />
-        <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeController.php" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Resources/config/makers.xml" />
+        <option value="$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeThemeController.php" />
       </list>
     </option>
   </component>
@@ -407,6 +381,12 @@
             <path>
               <item name="antcto" type="b2602c69:ProjectViewProjectNode" />
               <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antcto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -437,6 +417,49 @@
               <item name="antcto" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
               <item name="antcto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antcto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="maker-bundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antcto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="maker-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antcto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="maker-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Maker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antcto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="maker-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antcto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="antcto" type="462c0819:PsiDirectoryNode" />
+              <item name="maker-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -559,17 +582,18 @@
       <workItem from="1554641963946" duration="8637000" />
       <workItem from="1554684789084" duration="667000" />
       <workItem from="1554693013858" duration="225000" />
-      <workItem from="1554693624597" duration="736000" />
+      <workItem from="1554693624597" duration="1110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161938000" />
+    <option name="totallyTimeSpent" value="162312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="693" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7915633" visible="true" weight="0.31744748" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7915633" weight="0.31663975" />
       <window_info id="Structure" order="1" sideWeight="0.20843673" side_tool="true" weight="0.26494345" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -592,7 +616,7 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7915633" visible="true" weight="0.3029079" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7915633" visible="true" weight="0.31663975" />
       <window_info id="Structure" order="1" sideWeight="0.20843673" side_tool="true" weight="0.26494345" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -776,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -821,31 +838,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeThemeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-654" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Resources/config/makers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/Controller/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/core/AdminController/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -854,8 +862,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/Controller/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Resources/config/makers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/antcto/maker-bundle/src/Maker/MakeThemeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
