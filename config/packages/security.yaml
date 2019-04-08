@@ -1,24 +1,53 @@
 security:
+    encoders:
+        AntCTO\Entity\User: bcrypt
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory: { memory: ~ }
+        fos_userbundle:
+            id: fos_user.user_provider.username
+
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-        main:
-            anonymous: true
-
-            # activate different ways to authenticate
-
-            # http_basic: true
-            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-
-            # form_login: true
-            # https://symfony.com/doc/current/security/form_login_setup.html
+        user_secured_area:
+            pattern: ^/
+            http_basic: ~
+            form_login:
+                login_path: _admin_login
+                check_path: _admin_login_check
+                provider: fos_userbundle
+                csrf_token_generator: security.csrf.token_manager
+                default_target_path: _admin_dashboard
+            logout:
+                path: _admin_logout
+                target: _admin_login
+            anonymous:  true
+        admin_secured_area:
+            pattern: ^/admin/.*
+            http_basic: ~
+            form_login:
+                login_path: _admin_login
+                check_path: _admin_login_check
+                provider: fos_userbundle
+                csrf_token_generator: security.csrf.token_manager
+                default_target_path: _admin_dashboard
+            logout:
+                path: _admin_logout
+                target: _admin_login
+            anonymous:  true
 
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/login.html, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/register.html, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/login.html, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/register.html, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/account, role: ROLE_USER }
+        - { path: ^/admin, role: ROLE_ADMIN }

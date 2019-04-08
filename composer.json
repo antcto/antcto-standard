@@ -6,6 +6,9 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "antcto/maker-bundle": "^1.0@dev",
+        "friendsofsymfony/ckeditor-bundle": "^2.0",
+        "friendsofsymfony/jsrouting-bundle": "^2.3",
+        "friendsofsymfony/user-bundle": "^2.1",
         "sensio/framework-extra-bundle": "^5.2",
         "symfony/asset": "4.2.*",
         "symfony/console": "4.2.*",
@@ -14,6 +17,7 @@
         "symfony/framework-bundle": "4.2.*",
         "symfony/orm-pack": "^1.0",
         "symfony/security-bundle": "4.2.*",
+        "symfony/translation": "4.2.*",
         "symfony/twig-bundle": "4.2.*",
         "symfony/var-dumper": "4.2.*",
         "symfony/yaml": "4.2.*",
@@ -28,7 +32,7 @@
     "autoload": {
         "psr-4": {
             "AntCTO\\": "core/",
-            "AntCTO\\Theme\\Controller\\": "theme/Controller"
+            "AntCTO\\Theme\\Controller\\": "theme/Controller/"
         }
     },
     "autoload-dev": {

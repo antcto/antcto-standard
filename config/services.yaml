@@ -5,6 +5,7 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     theme_name: default
+    locale: 'en'
 
 services:
     # default configuration for services in *this* file
@@ -28,10 +29,10 @@ services:
         resource: '../theme/Controller'
         tags: ['controller.service_arguments']
 
-    AntCTO\Theme\Template\:
-        resource: '../theme/Template/%theme_name%/TemplateFunction.php'
-        public: false
-        tags:
-            - { name: twig.extension, priority: -1024 }
+#    AntCTO\Theme\Template\:
+#        resource: '../theme/Template/%theme_name%/TemplateFunction.php'
+#        public: false
+#        tags:
+#            - { name: twig.extension, priority: -1024 }
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

@@ -6,7 +6,7 @@
         {% if error %}
             <p class="login-box-msg">{{ error.messageKey|trans(error.messageData, 'security') }}</p>
         {% endif %}
-        <form action="{{ path('_login_check') }}" method="post" id="login-form">
+        <form action="{{ path('_admin_login_check') }}" method="post" id="login-form">
             <div class="form-group has-feedback">
                 <input id="username" name="_username" value="{{ last_username }}" class="form-control" placeholder="用户名" required="required"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

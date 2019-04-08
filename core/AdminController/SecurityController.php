@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/login.html", name="_login")
+     * @Route("/login.html", name="_admin_login")
      */
     public function login(Request $request)
     {
@@ -50,7 +50,7 @@ class SecurityController extends AbstractController
     }
 
     /**
-     * @Route("/check.html", name="_login_check")
+     * @Route("/check.html", name="_admin_login_check")
      * @throws \RuntimeException
      */
     public function checkAction(Request $request)
@@ -72,7 +72,7 @@ class SecurityController extends AbstractController
     }
 
     /**
-     * @Route("/logout.html", name="_logout")
+     * @Route("/logout.html", name="_admin_logout")
      * @throws \RuntimeException
      */
     public function logoutAction()
